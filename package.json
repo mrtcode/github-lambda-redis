@@ -1,13 +1,12 @@
 {
   "name": "github-lambda-redis",
   "version": "0.0.1",
-  "description": "",
+  "description": "Listens for GitHub events and sends a message to Redis on a push event",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Martynas Bagdonas",
   "license": "AGPL-3.0",
   "dependencies": {
     "redis": "^2.7.1"

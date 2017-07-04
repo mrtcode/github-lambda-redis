@@ -34,7 +34,8 @@ exports.handler = function (event, context) {
 		
 		try {
 			message = JSON.parse(message);
-		} catch (err) {
+		}
+		catch (err) {
 			return context.fail(err);
 		}
 		
@@ -46,7 +47,8 @@ exports.handler = function (event, context) {
 			}
 			else if (message.repository.name === 'translators') {
 				topic = 'translators';
-			} else {
+			}
+			else {
 				return context.fail('Invalid repository: ' + message.repository.name);
 			}
 			
